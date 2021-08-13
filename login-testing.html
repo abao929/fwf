@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="this is an example of a meta description. this will often show up in search results">
+		<meta name =viewport content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="bruh.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="login-box">
+			<div class="login-header">Welcome to FWF!</div>
+			<form>
+				<p id="login-text">USERNAME/EMAIL</p>
+				<input type="text" name="mailuid" autofocus="autofocus" class="login-input">
+				<p id="login-text">PASSWORD</p>
+				<input type="password" name="pwd" class="login-input">
+				<br>
+				
+				<button type="submit" class="login-button">Login</button>
+			</form>
+			<button class="signup-button" onclick="window.location.href='testing.html'">Signup</button>
+			<div class="credit">By <div onCLick="onClickAlex()" style="display:inline;">Alex Bao</div> '20 & <div onCLick="onClickWyatt()" style="display:inline;">Wyatt Ellison</div> '20</div>
+			<script type="text/javascript">
+		    var clicksA = 0;
+		    var clicksW = 0;
+		    function onClickAlex() {
+		        clicksA += 1;
+		        document.getElementById("clicksA").innerHTML = clicksA;
+			    if (clicksA==5) {
+			        window.location.href = "oof-alex.html";
+			    }
+		    };
+		    function onClickWyatt() {
+		    	clicksW += 1;
+		        document.getElementById("clicksW").innerHTML = clicksW;
+			    if (clicksW==5) {
+			        window.location.href = "oof-wyatt.html";
+			    }
+		    }
+		    </script>
+		</div>
+		<div class="hide-clicks"><a id="clicksA">0</a><a id="clicksW">0</a></div>
+	</body>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #c2c3ff;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#login-text {
+	font-size: 14px;
+	font-family: 'Lato';
+	color: #616161;
+	padding-bottom: 4px;
+}
+
+.login-header {
+	text-align: center;
+	font-size: 24px;
+	padding-bottom: 2vh;
+	font-family: 'Lato';
+	color: #44dbdf;
+}
+
+.login-box {
+	margin: auto;
+	width: 25vw;
+	min-width: 400px;
+	background-color: white;
+	padding: 2vh 3vw;
+	box-shadow: 0 0 14px rgba(0,0,0,0.6);
+	border-radius: 10px;
+	position: relative;
+	top: 100px;
+}
+
+.login-input {
+	width: calc(100% - 16px);
+	height: 30px;
+	padding: 2px 6px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.login-button {
+	margin-top: 12px;
+}
+
+.login-button, .signup-button {
+	height: 38px;
+	width: 70px;
+	color: #616161;
+	font-family: 'Lato';
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.signup-button {
+	position: relative;
+	top: -38px;
+	float: right;
+}
+
+.credit {
+	position: relative;
+	left: 35px;
+	margin: 0 auto;
+	text-align: center;
+	color: #616161;
+	font-family: 'Lato';
+	font-size: 12px;
+	padding-top: 14px;
+}

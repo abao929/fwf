@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="this is an example of a meta description. this will often show up in search results">
+		<meta name =viewport content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="banner">
+			<i>FREES WITH FRIENDS</i>
+		</div>
+		<button id="myBtn" class="hvr-glow">db</button>
+		<button id="friendBtn" class="hvr-glow" onclick="window.location.href='table.html'"><i class="fas fa-users"></i>&nbsp&nbsp&nbspFriends</button>
+		
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close"></span>
+				<div class="modal-header">
+					<h1>Goodbye my child</h1>
+				</div>
+				<div class="modal-body">
+					<div class="initials">db</div>
+					<div class="info-box">
+						<div class="name-line">Alex Bao</div>
+						<div class="email-line">abao20@nobles.edu</div>
+					</div>
+				</div>
+				<div class="modal-divider"></div>
+				<div class="modal-footer">
+					<form action="includes/logout.inc.php" method="post">
+						<button type="submit" name="logout-submit" class="logout-button hvr-icon-wobble-horizontal">Logout &nbsp;<i class="fas fa-sign-out-alt hvr-icon"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			  modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+			    modal.style.display = "none";
+			  }
+			}
+		</script>
+		<button id="testBtn">Testing</button>
+		<div id="myModal2" class="modal2">
+			<div class="modal-content2">
+				<span class="close2"></span>
+				<div class="modal-header2">
+					<h1>Bruh Moment</h1>
+				</div>
+				<div class="modal-body2">
+					<div class="initials">Yeet</div>
+					<div class="info-box">
+						<div class="name-line">Not Alex Bao</div>
+						<div class="email-line">asdfasdabao20@nobles.edu</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Get the modal
+			var modal2 = document.getElementById("myModal2");
+
+			// Get the button that opens the modal
+			var btn2 = document.getElementById("testBtn");
+
+			// Get the <span> element that closes the modal
+			var span2 = document.getElementsByClassName("close2")[0];
+
+			// When the user clicks the button, open the modal 
+			btn2.onclick = function() {
+			  modal2.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span2.onclick = function() {
+			  modal2.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal2) {
+			    modal2.style.display = "none";
+			  }
+			}
+		</script>
+		<div class="schedule-box">
+			The picture would go here<br>
+			This box is 1080x720
+		</div>	
+	</body>

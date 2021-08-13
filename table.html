@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name =viewport content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="stylesheet3.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+</head>
+<body>
+	<div class="banner">
+		<i>FREES WITH FRIENDS</i>
+	</div>
+	<button id="myBtn" class="hvr-glow">db</button>
+	<button id="friendBtn" class="hvr-glow" onclick="window.location.href='friends.html'"><i class="fas fa-users"></i>&nbsp&nbsp&nbspFriends</button>
+	<script>
+	function modalOpen(clicked_id) {
+		$add = clicked_id;
+	}
+	</script>
+	<div id="myModal0" class="modal">
+		<div class="modal-content"> 
+			<div class="modal-header">
+				<h1>Goodbye my child</h1>
+			</div>
+			<div class="modal-body">
+				<div class="initials">'.$_SESSION['initials'].'</div>
+				<div class="info-box">
+					<div class="name-line">'.$_SESSION['userUid'].'</div>
+					<div class="email-line">'.$_SESSION['userEmail'].'</div>
+				</div>
+			</div>
+			<div class="modal-divider"></div>
+			<div class="modal-footer">
+				<form action="includes/logout.inc.php" method="post">
+					<button type="submit" name="logout-submit" class="logout-button hvr-icon-wobble-horizontal">Logout &nbsp;<i class="fas fa-sign-out-alt hvr-icon"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="myModal1" class="modal">
+		<div class="modal-content2"> 
+			<span class="close1"></span>
+			<div class="modal-header">
+				<h1>On Monday From 8:25-9:15</h1>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li>You have: XYZ with LSKDJFSOIDF IN ALKJDSFAOIS</li>
+					<li>Jake has: XYZ with SDFLKSDJFKL in SDJFOSDI</li>
+					<li>Nathan has: XYZ with SDFOIQW_XZ in AIOQWN</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="table-wrap">
+		<table class="schedule-table" style="width:100%">
+			<thead>
+			<tr>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><span style="float: left;">8:00</span><br>Assembly<br><span style="float: left;">8:20</span></td>
+				<td><span style="float: left;">8:00</span><br>Assembly<br><span style="float: left;">8:20</span></td>
+				<td><span style="float: left;">8:00</span><br>Assembly<br>
+				<span style="float:left;">8:20</span></td>
+				<td><span style="float: left;">8:00</span><br>Assembly<br><span style="float: left;">8:25</span></td>
+				<td><span style="float: left;">8:00</span><br>Assembly<br><span style="float: left;">8:20</span></td>
+			</tr>
+
+			<tr>
+				<td onclick="modalOpen(this.id)" id="0" class="hvr-fade"><span style="float: left;">8:25</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">9:15</span></td>
+				<td onclick="onClick8()" class="hvr-fade"><span style="float: left;">8:25</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">9:15</span></td>
+				<td onclick="onClick15()" class="hvr-fade"><span style="float: left;">8:25</span><br><br>X-Block<br><br><span style="float: left;">8:55</span></td>
+				<td onclick="onClick22()" class="hvr-fade"><span style="float: left;">8:25</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">9:15</span></td>
+				<td onclick="onClick29()" class="hvr-fade"><span style="float: left;">8:25</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">9:15</span></td>
+			</tr>
+
+			<tr>
+				<td onclick="onClick3()" class="hvr-fade"><span style="float: left;">9:20</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">10:10</span></td>
+				<td onclick="onClick9()" class="hvr-fade"><span style="float: left;">9:20</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">10:10</span></td>
+				<td onclick="onClick16()" class="hvr-fade"><span style="float: left;">9:00</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">9:50</span></td>
+				<td onclick="onClick23()" class="hvr-fade"><span style="float: left;">9:20</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">10:10</span></td>
+				<td onclick="onClick30()" class="hvr-fade"><span style="float: left;">9:20</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">10:10</span></td>
+			</tr>
+
+			<tr>
+				<td onclick="onClick2()" class="hvr-fade"><span style="float: left;">10:15</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:00</span></td>
+				<td onclick="onClick10()" class="hvr-fade"><span style="float: left;">10:15</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:00</span></td>
+				<td onclick="onClick17()" class="hvr-fade"><span style="float: left;">9:55</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">10:45</span></td>
+				<td onclick="onClick24()" class="hvr-fade"><span style="float: left;">10:15</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:00</span></td>
+				<td onclick="onClick31()" class="hvr-fade"><span style="float: left;">10:15</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:00</span></td>
+			</tr>
+			
+			<tr>
+				<td onclick="onClick4()" class="hvr-fade"><span style="float: left;">11:05</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:55</span></td>
+				<td onclick="onClick11()" class="hvr-fade"><span style="float: left;">11:05</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:55</span></td>
+				<td onclick="onClick18()" class="hvr-fade"><span style="float: left;">10:45</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:15</span></td>
+				<td onclick="onClick25()" class="hvr-fade"><span style="float: left;">11:05</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:55</span></td>
+				<td onclick="onClick32()" class="hvr-fade"><span style="float: left;">11:05</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">11:55</span></td>
+			</tr>
+
+			<tr>
+				<td onclick="onClick5()" class="hvr-fade"><span style="float: left;">12:00</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">12:50</span></td>
+				<td onclick="onClick12()" class="hvr-fade"><span style="float: left;">12:00</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">12:50</span></td>
+				<td onclick="onClick19()" class="hvr-fade"><span style="float: left;">11:20</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">12:05</span></td>
+				<td onclick="onClick26()" class="hvr-fade"><span style="float: left;">12:00</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">12:50</span></td>
+				<td onclick="onClick33()" class="hvr-fade"><span style="float: left;">12:00</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">12:50</span></td>
+			</tr>
+
+			<tr>
+				<td onclick="onClick6()" class="hvr-fade"><span style="float: left;">12:55</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">1:45</span></td>
+				<td onclick="onClick13()" class="hvr-fade"><span style="float: left;">12:55</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">1:45</span></td>
+				<td onclick="onClick20()" class="hvr-fade"><span style="float: left;">12:10</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">12:55</span></td>
+				<td onclick="onClick27()" class="hvr-fade"><span style="float: left;">12:55</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">1:45</span></td>
+				<td onclick="onClick34()" class="hvr-fade"><span style="float: left;">12:55</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">1:45</span></td>
+			</tr>
+
+			<tr>
+				<td onclick="onClick7()" class="hvr-fade"><span style="float: left;">1:50</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">2:40</span></td>
+				<td onclick="onClick14()" class="hvr-fade"><span style="float: left;">1:50</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">2:40</span></td>
+				<td onclick="onClick21()" class="hvr-fade"><span style="float: left;">1:00</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">1:45</span></td>
+				<td onclick="onClick28()" class="hvr-fade"><span style="float: left;">1:50</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">2:40</span></td>
+				<td onclick="onClick35()" class="hvr-fade"><span style="float: left;">1:50</span><br>AP Physics<br>Baker 201<br>Chung<br><span style="float: left;">2:35</span></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

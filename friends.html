@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name =viewport content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+</head>
+<body>
+	<div class="banner">
+			<i>FREES WITH FRIENDS</i>
+	</div>
+	<button id="myBtn" class="hvr-glow">db</button>
+	<button id="friendBtn" class="hvr-glow" onclick="window.location.href='friends.html'"><i class="fas fa-users"></i>&nbsp&nbsp&nbspFriends</button>
+	<section class="friends-wrap">
+
+		<div class="friends-box" style="float: left;">
+			<div class="friends-header">ADD FRIENDS</div>
+			<div class="friends-body">
+				Type in your friend's name carefully <br>
+				If you mess up, it just won't work and the dumb devs don't have the brain power to fix this garbage
+			</div>
+			<form action="includes/friends.inc.php" method="post" class="friends-form" style="padding: 5% 7% 5% 7%;">
+				<p id="input-text">NOBLES USERNAME</p>
+				<br>
+				<input type="text" name="friend" autofocus="autofocus" class="friends-input">
+			</form>
+		</div>
+		<div class="friends-box" style="float: right;">
+			<div class="friends-header">MY FRIENDS</div>
+			<div class="friends-body">
+				<ul>
+					<li>Bruh 1</li>
+					<li>Bruh 2</li>
+					<li>Bruh 3</li>
+					<li>Bruh 4</li>
+					<li>Bruh 5</li>
+					<li>Bruh 6</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+
+</body>
+</html>
